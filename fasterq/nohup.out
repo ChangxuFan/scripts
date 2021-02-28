@@ -1,0 +1,196 @@
+
+OUTDIR unset
+
+OUTDIR unset
+./
+/scratch/fanc/tmpt/
+6
+2
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+Bareword "SRR" not allowed while "strict subs" in use at (user-supplied code).
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+Bareword "SRR" not allowed while "strict subs" in use at (user-supplied code).
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+./
+/scratch/fanc/tmpt/
+6
+2
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+Bareword "SRR" not allowed while "strict subs" in use at (user-supplied code).
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+Bareword "SRR" not allowed while "strict subs" in use at (user-supplied code).
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+./
+/scratch/fanc/tmpt/
+6
+2
+miao
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+./
+/scratch/fanc/tmpt/
+6
+2
+miao
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+./
+/scratch/fanc/tmpt/
+6
+2
+.//SRR000001
+miao
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+.//SRR000002
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+find: paths must precede expression: fasterq_dump_slave.sh
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+./
+/scratch/fanc/tmpt/
+6
+2
+.//SRR000002
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+mv: cannot move './/SRR000002/' to 'wang_.//SRR000002/': No such file or directory
+mv: cannot move './/SRR000002/SRR000002_1.fastq' to 'wang_.//SRR000002/SRR000002_1.fastq': No such file or directory
+mv: cannot move './/SRR000002/SRR000002.fastq' to 'wang_.//SRR000002/SRR000002.fastq': No such file or directory
+mv: cannot move './/SRR000002/SRR000002_2.fastq' to 'wang_.//SRR000002/SRR000002_2.fastq': No such file or directory
+.//SRR000001
+miao
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+mv: cannot move './/SRR000001/' to 'miao_.//SRR000001/': No such file or directory
+mv: cannot move './/SRR000001/SRR000001.fastq' to 'miao_.//SRR000001/SRR000001.fastq': No such file or directory
+mv: cannot move './/SRR000001/SRR000001_2.fastq' to 'miao_.//SRR000001/SRR000001_2.fastq': No such file or directory
+mv: cannot move './/SRR000001/SRR000001_1.fastq' to 'miao_.//SRR000001/SRR000001_1.fastq': No such file or directory
+gzip: .//SRR000001/ is a directory -- ignored
+./
+/scratch/fanc/tmpt/
+6
+2
+.//SRR000002
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+mv: cannot move './/SRR000002/' to './/SRR000002/wang_.//SRR000002/': No such file or directory
+mv: cannot move './/SRR000002/SRR000002.fastq' to './/SRR000002/wang_.//SRR000002/SRR000002.fastq': No such file or directory
+mv: cannot move './/SRR000002/SRR000002_1.fastq' to './/SRR000002/wang_.//SRR000002/SRR000002_1.fastq': No such file or directory
+mv: cannot move './/SRR000002/SRR000002_2.fastq' to './/SRR000002/wang_.//SRR000002/SRR000002_2.fastq': No such file or directory
+.//SRR000001
+miao
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+mv: cannot move './/SRR000001/' to './/SRR000001/miao_.//SRR000001/': No such file or directory
+mv: cannot move './/SRR000001/SRR000001_2.fastq' to './/SRR000001/miao_.//SRR000001/SRR000001_2.fastq': No such file or directory
+mv: cannot move './/SRR000001/SRR000001.fastq' to './/SRR000001/miao_.//SRR000001/SRR000001.fastq': No such file or directory
+mv: cannot move './/SRR000001/SRR000001_1.fastq' to './/SRR000001/miao_.//SRR000001/SRR000001_1.fastq': No such file or directory
+gzip: .//SRR000001/ is a directory -- ignored
+./
+/scratch/fanc/tmpt/
+6
+2
+.//SRR000001
+miao
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+gzip: .//SRR000001/ is a directory -- ignored
+.//SRR000002
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+./
+/scratch/fanc/tmpt/
+6
+2
+.//SRR000002
+spots read      : 528,988
+reads read      : 2,115,952
+reads written   : 865,693
+reads 0-length  : 379,404
+technical reads : 870,855
+.//SRR000001
+spots read      : 470,985
+reads read      : 1,883,940
+reads written   : 707,026
+reads 0-length  : 468,635
+technical reads : 708,279
+gzip: .//SRR000001/ is a directory -- ignored

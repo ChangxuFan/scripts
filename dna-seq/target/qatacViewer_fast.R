@@ -1,5 +1,10 @@
 library(rnaSeqFanc)
-qatacview.jsongen(df = "qatacViewer.tsv", out.json = "qatacViewer.json", replace = T)
+# the stout version: 
+# qatacview.jsongen(df = "qatacViewer.tsv", out.json = "qatacViewer.json", replace = T)
+
+# use Daofeng's version:
+qatacview.jsongen(df = "qatacViewer.tsv", add.to = "/bar/dli/public_html/qATACviewer/data.json")
+
 # qatacview.jsongen <- function (df, out.json = NULL, replace = F)  {
 #     if (is.character(df)) 
 #         df <- read.table(df, header = T, as.is = T, sep = "\t")

@@ -13,3 +13,10 @@ then
 	mkdir -p $lodgedir
 	ln -s $lodgedir $1"/sth"
 fi
+
+if [ "$2" == "alehouse" ]
+then 
+	lodgedir=`echo $cwd | sed 's;/bar/cfan/;/alehouse/data/fanc/;g'`
+	mkdir -p $lodgedir
+	ln -s $lodgedir $1"/alehouse"
+fi

@@ -1,4 +1,11 @@
 #!/bin/bash
-samtools sort -@ 12 -o $1.resort $1.bam
-samtools index $1.resort
-bamCoverage -b $1.resort -o $1.bw -p max/2 
+bam=$1
+threads=$2
+norm=$3
+if [ "$norm" == "" ]
+then
+	norm=RPKM
+fi
+echo $norm
+samtools index ${bam}
+bamCoverage -b $bam -o ${bam%.bam}.${norm}.bw -p $threads --normalizeUsing $norm

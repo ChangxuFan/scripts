@@ -1,9 +1,12 @@
 #!/bin/bash
-
+echo "something is wrong with this script. it just sums things together without averaging"
+echo "also it would count a region twice if it overlaps with 2 bins"
+exit 1
 notRun=0
 threads=1
-while getopts "w:s:g:t:n:Nq" flag; do
+while getopts "Gw:s:g:t:nNq" flag; do
 case "$flag" in 
+	G) bedGraphMode=1;;
 	w) binSize=$OPTARG;;
 	s) stepSize=$OPTARG;;
 	g) genome=$OPTARG;;
@@ -57,15 +60,26 @@ rm -rf $tmp
 # step1: convert bw into bedgraph
 for bw in $@
 do
-	bdg=${bw}.bdg
-	bdgBin=${bdg}.bin
-	root=${bw%.bw} && root=${root%.bigwig} && root=${root%.bigWig}
-	bwBin=${root}_bin${binSize}.bw
-	echo "bigWigToBedGraph ${bw} ${bdg} && \
-	cat ${bdg} | awk -F '\t' 'BEGIN{OFS = FS} {"'$4 = $4 * ($3 - $2); print $1, $2, $3, 0, $4'"}' | \
-	bedmap --faster --echo --sum --delim "'"\t"'" --skip-unmapped ${bins} - > ${bdgBin} && \
-	bedGraphToBigWig ${bdgBin} ${chromSizes} ${bwBin} && \
-	rm ${bdg} ${bdgBin}" >> $tmp
+	
+	if [ "$bedGraphMode" == 1 ]
+	then
+		root=${bw%.bedGraph}
+		root=${root%.bdg}
+		root=${root%.bedgraph}
+		outfile=${root}_bin${binSize}.bedGraph
+		echo "cat ${bw} | awk -F '\t' 'BEGIN{OFS = FS} {"'$4 = $4 * ($3 - $2); print $1, $2, $3, 0, $4'"}' | \
+		bedmap --faster --echo --sum --delim "'"\t"'" --skip-unmapped ${bins} - > ${outfile} " >> $tmp
+	else
+		bdg=${bw}.bdg
+		bdgBin=${bdg}.bin
+		root=${bw%.bw} && root=${root%.bigwig} && root=${root%.bigWig}
+		bwBin=${root}_bin${binSize}.bw
+		echo "bigWigToBedGraph ${bw} ${bdg} && \
+		cat ${bdg} | awk -F '\t' 'BEGIN{OFS = FS} {"'$4 = $4 * ($3 - $2); print $1, $2, $3, 0, $4'"}' | \
+		bedmap --faster --echo --sum --delim "'"\t"'" --skip-unmapped ${bins} - > ${bdgBin} && \
+		bedGraphToBigWig ${bdgBin} ${chromSizes} ${bwBin} && \
+		rm ${bdg} ${bdgBin}" >> $tmp
+	fi
 done
 if [ "$quiet" != 1 ]
 then

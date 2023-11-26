@@ -1,6 +1,6 @@
 #!/bin/bash
 bRemove=0
-All=( "4dn" "hmtp" )
+All=( "4dn" "hmtp" "genomes" "hnk" "motifs" "software")
 
 while getopts d option
 do

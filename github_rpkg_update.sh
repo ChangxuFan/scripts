@@ -5,7 +5,7 @@ echo "you would still need to run ssh-add before you update"
 #  ssh-add ~/.ssh/id_ed25519_github
 #######
 
-for i in abaFanc abaFanc2 bamFanc cageFanc common downloadSRX liteRnaSeqFanc scFanc utilsFanc v4c; do
+for i in abaFanc abaFanc2 bamFanc cageFanc common downloadSRX liteRnaSeqFanc scFanc utilsFanc v4c wgbsFanc; do
 	echo ">>>>>>>>>>>>>>>>"
 	echo "updating:" ${i}
 	echo ">>>>>>>>>>>>>>>>"

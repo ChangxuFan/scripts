@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 while getopts s: option
 do
 case "${option}"
@@ -18,11 +20,17 @@ fi
 
 # echo "\n"
 # cat $INPUT
+
 if [[ $HOSTNAME == *"ris"* ]]
 then
   grep -v -F "track name" ${INPUT} | grep -v "#" | sort -k1,1 -k2,2n > $1.sort
   ~/software/samtools/htslib-1.17/bgzip -c -f $1.sort > $1.gz
   ~/software/samtools/htslib-1.17/tabix -f -p bed $1.gz
+  rm $1.sort
+elif [ -f ~/.clusterWangHPC ]; then
+  grep -v -F "track name" ${INPUT} | grep -v "#" | sort -k1,1 -k2,2n > $1.sort
+  /wanglab/fanc/software/htslib-1.18/bgzip -c -f $1.sort > $1.gz
+  /wanglab/fanc/software/htslib-1.18/tabix -f -p bed $1.gz
   rm $1.sort
 else
   grep -v -F "track name" ${INPUT} | grep -v "#" | sort -k1,1 -k2,2n > $1.sort

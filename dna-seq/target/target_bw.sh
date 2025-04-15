@@ -15,8 +15,8 @@ for type in raw norm; do
 	rename 's/_R1//' *
 	rename 's/bigWig/bw/' *
 	rename "s/.bw/_${type}.bw/" *
-	jd.R --glob *.bw --group $RANDOM -j group.json
-	jd.R --glob *.bw -j groupless.json
+	# jd.R --glob *.bw --group $RANDOM -j group.json
+	# jd.R --glob *.bw -j groupless.json
 
 	cd ../
 done
